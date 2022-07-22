@@ -1,9 +1,9 @@
-# Office 365 to Snycro Contact Importer
+# Office 365 to Syncro Contact Importer
 
-The primary purpose of this script is to take all licensed used in an Office 365 tenant and import then into Syncro under a specific customer account. It does not include any code to delete or modify data already in Snycro, only add to it. 
+The primary purpose of this script is to take all licensed used in an Office 365 tenant and import then into Syncro under a specific customer account. It does not include any code to delete or modify data already in Syncro, only add to it. 
 
 Sytax Example:
-Office365ToSnycro.ps1 -subdomain Companyname.shield -API 82dgb45kjgnfrq98asdf-9adfaa9045309g09ad094 -CustID 587314
+Office365ToSyncro.ps1 -subdomain Companyname.shield -API 82dgb45kjgnfrq98asdf-9adfaa9045309g09ad094 -CustID 587314
 
 # Main Features:
 
@@ -49,7 +49,7 @@ There is a 4th optional switch you can use, but it is not recommended.
 
 Error checking on the 2 critical Office 365 commands is not yet implemented. If these fail the script will continue but won’t upload any data. It’s best to let it finish if this happens so it can cleanup properly. 
 
-There may be API errors that are not recognized. If you run into any API errors that are reported as unknown, you may post the error line in the Issues section on [GitHub](https://github.com/SamanthaMotz/Office365ToSnycroContacts). If possible the script will be updated to handle these new errors.
+There may be API errors that are not recognized. If you run into any API errors that are reported as unknown, you may post the error line in the Issues section on [GitHub](https://github.com/SamanthaMotz/Office365ToSyncroContacts). If possible the script will be updated to handle these new errors.
 
 The duplicate checking is limited to 100 contacts. This may be increased if users request it. 
 
